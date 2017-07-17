@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+         http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans.xsd 
+         http://www.springframework.org/schema/context 
+         http://www.springframework.org/schema/context/spring-context.xsd"> 
+<!-- <beans xsi:schemaLocation=" http://www.springframework.org/schema/beans  -->
+<!-- http://www.springframework.org/schema/beans/spring-beans.xsd  -->
+<!-- http://www.springframework.org/schema/integration  -->
+<!-- http://www.springframework.org/schema/integration/spring-integration-2.1.xsd  -->
+<!-- http://www.springframework.org/schema/integration/stream  -->
+<!-- http://www.springframework.org/schema/integration/stream/spring-integration-stream-2.1.xsd  -->
+<!-- http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd  -->
+<!-- http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd  -->
+<!-- http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"  -->
+<!-- xmlns:security="http://www.springframework.org/schema/security" xmlns:tx="http://www.springframework.org/schema/tx"  -->
+<!-- xmlns:p="http://www.springframework.org/schema/p"  -->
+<!-- xmlns:int-stream="http://www.springframework.org/schema/integration/stream" xmlns:int="http://www.springframework.org/schema/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"  -->
+<!-- xmlns="http://www.springframework.org/schema/beans"> -->
+	<context:component-scan base-package="com.nattav.company" />
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/pages/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+</beans>
